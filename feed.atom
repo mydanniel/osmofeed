@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mydanniel.github.io/osmofeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2022-08-08T02:05:04.944Z</updated>
+    <updated>2022-08-09T02:19:28.216Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://mydanniel.github.io/osmofeed/index.html"/>
     <link rel="self" href="https://mydanniel.github.io/osmofeed/feed.atom"/>
@@ -24,17 +24,6 @@
         <updated>2022-07-24T02:21:34.000Z</updated>
         <summary type="html"><![CDATA[<p>🗓 2022 年 4 月 19 日<br>📍 Warner Bros. Studio Tour London - The Making of Harry Potter</p>
 <p>前往 bilibili 一键三连：<a href="https://www.bilibi]]></summary>
-        <author>
-            <name>Hi, DIYgod</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[基于 Obsidian 的生活记录系统]]></title>
-        <id>https://diygod.me/obsidian/</id>
-        <link href="https://diygod.me/obsidian/"/>
-        <updated>2022-07-09T18:23:52.000Z</updated>
-        <summary type="html"><![CDATA[<p>正如我在 <a href="/2020">2020 年终总结</a> 中提到，我一直在用 Notion 写子弹笔记，现在它有了亿点点不一样，现在我们就来重新窥探一下我目前的生活记录系统</p>
-<p><strong>日记</strong><br><img src="/images/obsidian-1.png"></p>]]></summary>
         <author>
             <name>Hi, DIYgod</name>
         </author>
