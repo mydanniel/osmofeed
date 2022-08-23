@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mydanniel.github.io/osmofeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2022-08-22T02:18:41.643Z</updated>
+    <updated>2022-08-23T02:26:50.162Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://mydanniel.github.io/osmofeed/index.html"/>
     <link rel="self" href="https://mydanniel.github.io/osmofeed/feed.atom"/>
@@ -13,17 +13,6 @@
         <updated>2022-07-26T08:12:46.000Z</updated>
         <summary type="html"><![CDATA[<p>🗓 2022 年 4 月 10 日 - 2022 年 4 月 14 日<br>📍 The Lake District in North West England</p>
 <p>前往 bilibili 一键三连：<a href="https://www.bilibili.]]></summary>
-        <author>
-            <name>Hi, DIYgod</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[英国旅游VLOG | 发小带你逛哈利波特制片厂]]></title>
-        <id>https://diygod.me/vlog-the-making-of-harry-potter/</id>
-        <link href="https://diygod.me/vlog-the-making-of-harry-potter/"/>
-        <updated>2022-07-24T02:21:34.000Z</updated>
-        <summary type="html"><![CDATA[<p>🗓 2022 年 4 月 19 日<br>📍 Warner Bros. Studio Tour London - The Making of Harry Potter</p>
-<p>前往 bilibili 一键三连：<a href="https://www.bilibi]]></summary>
         <author>
             <name>Hi, DIYgod</name>
         </author>
