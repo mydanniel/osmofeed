@@ -2,19 +2,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mydanniel.github.io/osmofeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2022-08-24T02:25:08.459Z</updated>
+    <updated>2022-08-25T02:28:42.923Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://mydanniel.github.io/osmofeed/index.html"/>
     <link rel="self" href="https://mydanniel.github.io/osmofeed/feed.atom"/>
     <entry>
-        <title type="html"><![CDATA[英国旅游VLOG | 英格兰湖区]]></title>
-        <id>https://diygod.me/vlog-lake-district/</id>
-        <link href="https://diygod.me/vlog-lake-district/"/>
-        <updated>2022-07-26T08:12:46.000Z</updated>
-        <summary type="html"><![CDATA[<p>🗓 2022 年 4 月 10 日 - 2022 年 4 月 14 日<br>📍 The Lake District in North West England</p>
-<p>前往 bilibili 一键三连：<a href="https://www.bilibili.]]></summary>
+        <title type="html"><![CDATA[Web3 Data Guide: Sudoswap]]></title>
+        <id>https://medium.com/p/aaeca8974dbf</id>
+        <link href="https://medium.com/coinmonks/web3-data-guide-sudoswap-aaeca8974dbf?source=rss-ad1e6939064c------2"/>
+        <updated>2022-08-24T15:25:03.000Z</updated>
+        <summary type="html"><![CDATA[I’ll be explaining how the newest NFT AMM on the block works from a data analyst and engineering perspective!
+Continue reading on Coinmonks »]]></summary>
         <author>
-            <name>Hi, DIYgod</name>
+            <name>Andrew Hong</name>
         </author>
     </entry>
 </feed>
