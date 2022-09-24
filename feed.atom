@@ -2,19 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mydanniel.github.io/osmofeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2022-09-23T02:39:47.396Z</updated>
+    <updated>2022-09-24T02:41:16.367Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://mydanniel.github.io/osmofeed/index.html"/>
     <link rel="self" href="https://mydanniel.github.io/osmofeed/feed.atom"/>
-    <entry>
-        <title type="html"><![CDATA[Web3 Data Guide: Sudoswap]]></title>
-        <id>https://medium.com/p/aaeca8974dbf</id>
-        <link href="https://medium.com/coinmonks/web3-data-guide-sudoswap-aaeca8974dbf?source=rss-ad1e6939064c------2"/>
-        <updated>2022-08-24T15:25:03.000Z</updated>
-        <summary type="html"><![CDATA[I’ll be explaining how the newest NFT AMM on the block works from a data analyst and engineering perspective!
-Continue reading on Coinmonks »]]></summary>
-        <author>
-            <name>Andrew Hong</name>
-        </author>
-    </entry>
 </feed>
