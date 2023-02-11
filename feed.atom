@@ -2,67 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mydanniel.github.io/osmofeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2023-02-10T01:47:10.504Z</updated>
+    <updated>2023-02-11T01:36:13.225Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://mydanniel.github.io/osmofeed/index.html"/>
     <link rel="self" href="https://mydanniel.github.io/osmofeed/feed.atom"/>
-    <entry>
-        <title type="html"><![CDATA[2022 年终总结]]></title>
-        <id>10-291</id>
-        <link href="https://diygod.xlog.app/2022"/>
-        <updated>2023-01-12T00:44:00.000Z</updated>
-        <summary type="html"><![CDATA[相比国内的魔幻日常，今年在苏格兰的生活还是很安稳的
-
-
-
-年度最佳
-先从快乐的 DIY 年度最佳颁奖仪式开始吧
-影视
-看过的 19 部动漫和 18 部剧集和 6 部电影：https://movie.douban.com/people/62759792/collect?mode=list
-DIY 年度番剧： 《鬼灭之刃 游郭篇》
-今年动漫神仙打架，《夏日重现》、《来自深渊》、《赛博朋克》、《间谍过家家》、《更衣人偶坠入爱河》、《电锯人》...太多优秀的作品，但其中最喜欢的还是《鬼灭之刃 游郭篇》
-鬼灭老粉了，燃点和泪点都很戳我，凯旋而归，谢谢飞碟社款待
-
-
-
-DIY 年度剧集： 《人民公仆》
-闪闪发光的剧集和主角，但生活永远比戏剧更魔幻，愿世界没有战争
-
-
-
-DIY 年度电影：无
-今年电影看得实在太少了，没有遇到能欧呼一整年程度的电影
-图书
-今年看过的 9 本书：
-
-《高效能人士的七个习惯》
-《通往奴役之路》
-《献给阿尔吉侬的花束》
-《黄金时代》
-《富兰克林自传》
-《黑客与画家》
-《永恒的终结》
-《人类简史》
-《被讨厌的勇气》
-
-虽然数量屈指可数，但相比 2021 年的 1 本还是有了很大的进步，带来的收获和快乐也不少
-DIY 年度图书：《富兰克林自传》
-《富兰克林自传》是对我影响最大的一本，朴实无华的语句中处处透漏着人生智慧和实用主义思想，给我带来了很多思考，其中每日自省的 13 条美德也被我沿用
-
-
-
-电子产品
-DIY 年度电子产品： 米家PGG颈椎按摩仪
-相比于《颈椎病康复指南》，按摩仪要实用得多， 程序员必备，注意一定是带全身按摩贴的米家 APP 款，腰酸背痛时候的救命神器，反而颈椎按摩功能感觉没那么好用
-产品链接：https://www.mi.com/shop/buy/detail?product_id=14282
-
-
-
-应用
-DIY 年度应用：Obsidian
-在…]]></summary>
-        <author>
-            <name>DIYgod</name>
-        </author>
-    </entry>
 </feed>
