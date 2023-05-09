@@ -10,28 +10,7 @@
       "title": "DIYgod",
       "feedUrl": "https://diygod.me/atom.xml",
       "siteUrl": "https://diygod.xlog.app",
-      "articles": [
-        {
-          "id": "10-914",
-          "author": null,
-          "description": "我必须让身边所有软件都保持最新版本，就像走路不能踩到地砖缝缝一样，没有意义，但也危害不大，所以我放任它发展\n\n\n\n操作系统和固件\n最基础的，大到主力生产力 MacBook，小到吃灰的 Dockcase 扩展坞，都要更新，这是我的 Checklist，基本上靠更新提醒就够了\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n设备截图MacBookNAS路由器iPadiPhone小米手环小米家居相机PS5SwitchDockcase 扩展坞\n\n应用\n操作系统下的应用也需要更新\nMacBook\nHomebrew Cask 出现之前 macOS 的应用更新一直是一个难题，App Store 的自动更新最好用但是应用很少，曾经困扰了我很久，但现在没问题了\n对 macOS 的应用我秉持这样的原则：\n\n第一顺位 Web 版，比如：Discord、Slack、Telegram、Spotify\n第二顺位 App Store 版\n第三顺位 Homebrew\n除此之外不安装\n\n其中 Web 版不需要更新，App Store 会自动更新，Homebrew 只需要每天执行下命令\nCopybrew update && brew upgrade && brew cu -a -y && brew cleanup\n\n但 App Store 有时候会好几天才能自动更新上，这不能忍，安装上 mas 用命令行触发强制更新，再加上鼠须管的词库更新和 alias，下面就是我的总命令了\nCopyalias up=\"brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && ~/plum/rime-install iDvel/rime-ice:others/recip…",
-          "link": "https://diygod.me/api/redirection?characterId=10&noteId=914",
-          "publishedOn": "2023-04-08T23:00:00.000Z",
-          "wordCount": 2524,
-          "title": "我得了软件更新强迫症",
-          "imageUrl": null
-        },
-        {
-          "id": "10-914",
-          "author": null,
-          "description": "我必须让身边所有软件都保持最新版本，就像走路不能踩到地砖缝缝一样，没有意义，但也危害不大，所以我放任它发展\n\n\n\n操作系统和固件\n最基础的，大到主力生产力 MacBook，小到吃灰的 Dockcase 扩展坞，都要更新，这是我的 Checklist，基本上靠更新提醒就够了\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n设备截图MacBookNAS路由器iPadiPhone小米手环小米家居相机PS5SwitchDockcase 扩展坞\n\n应用\n操作系统下的应用也需要更新\nMacBook\nHomebrew Cask 出现之前 macOS 的应用更新一直是一个难题，App Store 的自动更新最好用但是应用很少，曾经困扰了我很久，但现在没问题了\n对 macOS 的应用我秉持这样的原则：\n\n第一顺位 Web 版，比如：Discord、Slack、Telegram、Spotify\n第二顺位 App Store 版\n第三顺位 Homebrew\n除此之外不安装\n\n其中 Web 版不需要更新，App Store 会自动更新，Homebrew 只需要每天执行下命令\nCopybrew update && brew upgrade && brew cu -a -y && brew cleanup\n\n但 App Store 有时候会好几天才能自动更新上，这不能忍，安装上 mas 用命令行触发强制更新，再加上鼠须管的词库更新和 alias，下面就是我的总命令了\nCopyalias up=\"brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && ~/plum/rime-install iDvel/rime-ice:others/recip…",
-          "link": "https://diygod.xlog.app/software-update",
-          "publishedOn": "2023-04-08T23:00:00.000Z",
-          "wordCount": 1604,
-          "title": "我得了软件更新强迫症",
-          "imageUrl": null
-        }
-      ]
+      "articles": []
     }
   ],
   "cliVersion": "1.15.1"
