@@ -2,10 +2,25 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mydanniel.github.io/osmofeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2023-07-21T01:36:48.289Z</updated>
+    <updated>2023-07-22T01:34:12.952Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://mydanniel.github.io/osmofeed/index.html"/>
     <link rel="self" href="https://mydanniel.github.io/osmofeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[发小浴室沉思录，非正常录音]]></title>
+        <id>10-1851</id>
+        <link href="https://xlog.app/api/redirection?characterId=10&amp;noteId=1851"/>
+        <updated>2023-07-21T00:03:52.000Z</updated>
+        <summary type="html"><![CDATA[偷录的发小洗澡哼哼，太可爱了
+
+  
+
+你也觉得可爱的话请去推特夸夸 @justjustjustcc
+求个一键三连]]></summary>
+        <author>
+            <name>Hi, DIYgod</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[对 Newsletter 说不]]></title>
         <id>10-1825</id>
