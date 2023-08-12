@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mydanniel.github.io/osmofeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2023-08-11T01:09:35.644Z</updated>
+    <updated>2023-08-12T01:08:45.872Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://mydanniel.github.io/osmofeed/index.html"/>
     <link rel="self" href="https://mydanniel.github.io/osmofeed/feed.atom"/>
@@ -63,38 +63,6 @@
 
 你也觉得可爱的话请去推特夸夸 @justjustjustcc
 求个一键三连]]></summary>
-        <author>
-            <name>Hi, DIYgod</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[对 Newsletter 说不]]></title>
-        <id>10-1825</id>
-        <link href="https://xlog.app/api/redirection?characterId=10&amp;noteId=1825"/>
-        <updated>2023-07-12T18:31:13.000Z</updated>
-        <summary type="html"><![CDATA[衰退无处不在，这是很正常的现象。人们自然而然地更倾向于短平快的消费方式。然而，我一直无法忍受的一种奇怪趋势是，在一些地方，人们将 RSS 抛弃，转而使用 Newsletter。
-本质上，电子邮件是一种私密的双向通信机制，而 RSS 是一种开放的单向通信机制。使用电子邮件进行私密的更新和文章推送是没有意义的，RSS 是更自然的选择。强行将这些功能应用于电子邮件可能会导致许多问题。这些问题让我觉得 Newsletter 就像一个没有能力但却拼命想证明自己的暴君，无法很好达到发布者期望的效果，又过分侵犯了用户的选择和效率。
-五宗罪#
-封闭限制#
-RSS 是一种开放协议，它允许用户自主订阅和拉取感兴趣的网站的 RSS 源，获取最新的更新和文章，无需他人的许可。用户还可以通过阅读器的个性化设置自由选择所需内容，并且可以使用多种渠道接收通知，甚至可以使用 Telegram Bot 进行订阅。
-
-而 Newsletter 是由发布者推送到用户私人邮箱的订阅信息，整个过程依赖于平台方，渠道全程封闭。这种封闭极大地限制了用户的选择权，用户被迫在平台的许可下，通过特定渠道和特定格式接收固定信息。
-繁琐低效#
-相比之下，RSS 更加简洁高效。订阅源可以集中管理，分类、收藏、订阅和取消订阅的过程也非常简单。
-
-而 Newsletter 则会将各种各样的邮件混合在一起，非常分散且难以管理。你很难知道自己到底订阅了哪些内容，它们什么时候会突然出现。而且，内容格式也是各种各样的，查看和阅读起来非常混乱，所以你也不能将一篇文章进行收藏，更不用说方便的第三方集成了。
-信息过载#
-Newsletter 很难对内容进行有效分类和过滤，又与所有正常邮件混合在一起，需要花费精力手动整理。这很容易导致信息过载和垃圾邮件的问题。
-而 RSS 可以很方便地进行分类和过滤，对于不重要的内容，你也可以一键全部标记为已读瞬间解脱，完全没有压力。
-
-
-更新周期长#
-对于 RSS 的更新虽然不算实时，但一般以小时计，类似 RSSHub 等自建服务，甚至可以做到每分钟更新。相比之下，Newsletter 的更新周期，以天甚至周月计，明显滞后了许多。
-隐私和安全风险#
-RSS 的开放性体现在它不需要用户提供个人信息，从而确保了更好的隐私性和安全性。然而，Newsletter 至少需要提供一个邮箱地址，这增加了数据泄露或滥用的风险。更有甚者，电子邮件可能包含恶意链接或附件。
-也有一些优点#
-尽管我对 Newsletter 的低效和局限性持批评态度，但我也承认它有其优点，它的流行也有一些合理性，特别是在卖方市场的情况下对于一些发布者来说。Newsletter 可以让他们获得更多的控制权和点击率，可以更容易知道有谁订阅了他们的内容，并通过邮件通知更强烈地唤起用户的注意。
-然而，站在用户的角度，我必须明确表示，我更偏爱 RSS。我不愿意以放弃自己的选择权和效率来迎合发布者的控制欲。在我看来，获取信息的权力应该掌握在我自己手中，而非其他人或机构。所以，我在这里对 Newsletter 说不。]]></summary>
         <author>
             <name>Hi, DIYgod</name>
         </author>
