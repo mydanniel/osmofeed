@@ -12,6 +12,16 @@
       "siteUrl": "https://diygod.cc",
       "articles": [
         {
+          "id": "10-2022",
+          "author": null,
+          "description": "🕊️ 本文送给更开放的互联网\n\n起因是看到 @geekbb 介绍 Warp 的推文。尽管 Warp 已经发布了很长时间，就保护 IP 隐私而言，它并没有 iCloud Private Relay 好用，我也没有魔法上网的需求。但是我突然意识到，我还是有隐藏 IP 的需求。\n在开发 RSSHub 的几年中，我发现提供公共 API 的站点非常少，许多站点还会采取严格的反爬控制来限制其平台内容的获取。有些站点会屏蔽同一 IP 发出过多请求，而还有一些站点则会全面屏蔽常见云服务器厂商的 IP 地址。因此，仅仅为了获取最新几条内容更新却变得非常困难。\n\n这种情况需要使用代理，但是专门的爬虫代理通常价格昂贵，性价比极低，如果 Cloudflare WARP 的无限流量和丰富的 IP 资源能被 RSSHub 利用就太棒了。RSSHub 已经支持了通用的代理协议，只要能将 WARP 包装为通用的 proxy 就可以。\n\n虽然无法直接在命令行环境中方便地使用官方客户端，但这么容易想到的点子肯定已经被别人实现过了。我在 GitHub 上找到了一个封装的 Docker。\n\n然后只需要在 RSSHub 的 docker-compose.yml 中再添加这样一个 service 来启用代理服务\nCopywarp-socks:\n    image: monius/docker-warp-socks:latest\n    privileged: true\n    volumes:\n        - /lib/modules:/lib/modules\n    cap_add:\n        - NET_ADMIN\n        - SYS_ADMIN\n    sysctls:\n        net.ipv6.conf.all.disable_ipv6: 0\n        net.ipv4.conf.all.src_valid_mark: 1\n    healthcheck:\n        test: [\"CMD\", \"curl\", \"-f\", \"https://www.cloudflare.com/cdn-cgi/trace\"]\n        interval: 30s\n        timeout: 10s\n        retries: 5\n\n最后给 RSSHub 加一个 PROXY_URI 环境变量来使用代理\nCopyPROXY_URI: 'socks5h://warp-socks:9091'\n\n我选取了一个我经常使用的 hotukdeals 路由（英国版的什么值得买）进行测试。该站点会屏蔽所有 DigitalOcean 的 IP，因此一直处于 403 状态。\n\n加上 WARP 后可顺利访问\n\n此外，我发现每次重启 WARP 时，都会输出新的 IP。尽管我没有时间验证，但我感觉 IP 应该会经常自动更改，这对解决反爬是一个好消息。\n\n还可以进一步自定义 WireGuard 的配置，包括使用付费版 WARP+ 和自定义 endpoint，以获取可能更好的结果。\n生成 WireGuard 配置文件可以使用\n\n刷 WARP+ 流量和筛选 endpoint 可以使用\n\n有说法是 WARP+ 的速度并无明显差异（《WARP、WARP + 速度对比，以及 WARP 速度上限》），但是是否影响反爬效果还需要进一步验证。\n如果一切顺利，RSSHub 官方实例中许多严格反爬的路由应该能重新使用。我将在几天内进行验证并在此更新。",
+          "link": "https://xlog.app/api/redirection?characterId=10&noteId=2022",
+          "publishedOn": "2023-08-17T22:01:51.000Z",
+          "wordCount": 10304,
+          "title": "优雅使用 Cloudflare WARP 应对  RSSHub 反爬难题",
+          "imageUrl": "https://ipfs.xlog.app/ipfs/bafkreigrpjhr6oshromzjunxhj6jaqivggdcstkfhutqgfbhh7fztgtioq"
+        },
+        {
           "id": "10-1957",
           "author": null,
           "description": "长久以来#\n我一直将个人博客视为一个理想的展示个人 IP 的 “个人网站”，而不仅仅是发布文章的平台。我曾在 2014 年初学编程时使用 WordPress 建站  《世界，你好！》；入了前端坑后，在 2017 年我转向了 Hexo 《做了一点微小的改动》；Web3 飞升后 2022 年我换成了 xLog 《第一个开源链上博客系统 xLog》。然而，无论我使用什么博客系统，一直都存在一个问题，那就是如何优雅地汇集和展示我在其他平台发布的作品，最好还能直接显示外站的数据。我之前通常以文章形式发布作品，并在文章中附上链接，然而这样做显然不够优雅，读者还需要额外点击链接进行跳转。\n灵感降临#\n我在学习达芬奇剪辑时，发现了影视飓风的网站，它通过外链方式列出了他们在 B 站发布的视频，其中包括标题、封面图、发布时间、播放量等信息。这个发现给了我启发，我完全可以在 xLog 上制作一个装载了我在各个平台作品的作品集，这里面可以有我发布在 B 站的视频、我在 GitHub 上维护的仓库、我参与的小宇宙播客甚至是我在 pixiv 上创作的画作。这样，当人们访问我的博客时，将不只是看到文章，而是会看到更丰富多元的我，这让我的博客更接近一个真正意义上的 “个人网站”。\n下手#\n想法萌发后，实现就简单了。\n\n对 xLog 后台进行了优化和清晰的分类：文章、页面、作品集，以消除类型增多后可能带来的用户困扰。\n\n\n\n设计了一个全新的编辑页，不同于文章和页面，这里只保留封面、标题、摘要、发布时间，并新增外部链接字段。\n\n\n\n实现了作品信息的自动填充功能，减轻了手动输入的负担。这是通过获取链接的 Open Graph 信息实现的，涉及到的字段包括 og:image og:title og:description og:date\n\n\n\n把作品展示在首页和独立的作品集页\n\n\n\n数据的获取和展示，对于 “偷数据” 经验丰富的 RSSHub 作者来说，这是得心应手的一环，首先针对 bilibili、小宇宙、GitHub、pixiv、Twitter 这几个平台进行了抓取，获取到播放量和评论数并在 xLog 的卡片上进行展示，同时考虑到源站可能的压力和反爬，我特别设置了足够长的数据缓存。\n\n\n如今，这个简单实用的小功能已经落地实现了，可以看看我的作品集页，你是否也想要尝试在 xLog 建立属于自己的个人作品集呢？",
