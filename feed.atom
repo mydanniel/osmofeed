@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mydanniel.github.io/osmofeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2023-08-19T01:07:55.200Z</updated>
+    <updated>2023-08-20T01:13:20.625Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://mydanniel.github.io/osmofeed/index.html"/>
     <link rel="self" href="https://mydanniel.github.io/osmofeed/feed.atom"/>
@@ -90,31 +90,6 @@ CopyPROXY_URI: 'socks5h://warp-socks:9091'
 
 
 如今，这个简单实用的小功能已经落地实现了，可以看看我的作品集页，你是否也想要尝试在 xLog 建立属于自己的个人作品集呢？]]></summary>
-        <author>
-            <name>Hi, DIYgod</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[女友浴室沉思录，非正常录音]]></title>
-        <id>10-1924</id>
-        <link href="https://xlog.app/api/redirection?characterId=10&amp;noteId=1924"/>
-        <updated>2023-07-21T02:12:09.000Z</updated>
-        <summary type="html"><![CDATA[偷录的女友洗澡哼哼，太可爱了你也觉得可爱的话请去推特夸夸 justjustjustcc求个一键三连, 视频播放量 2048、弹幕量 0、点赞数 67、投硬币枚数 21、收藏人数 7、转发人数 5, 视频作者 DIYgod, 作者简介 ( ゜- ゜)つロ 乾杯~ - diygod.me，相关视频：这不就，诈出来了吗，情侣恶作剧：趁女朋友睡觉偷偷放屁，作死大挑战！凌晨1点玩地铁跑酷，踩弹跳鞋杰克会变“巨型人”？，(网络爆笑梗图)，小夫妻玩得花啊，挨打日记！｜98w人想看的读评论来了｜爱看的都哭了，弄得很好，下次别弄了！，对兄弟使用催眠术后，对他做任何事情都醒不来了！，哥哥们感动吗？，假装我打了我老婆，看着孩子们的反应]]></summary>
-        <author>
-            <name>Hi, DIYgod</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[发小浴室沉思录，非正常录音]]></title>
-        <id>10-1851</id>
-        <link href="https://xlog.app/api/redirection?characterId=10&amp;noteId=1851"/>
-        <updated>2023-07-21T00:03:52.000Z</updated>
-        <summary type="html"><![CDATA[偷录的发小洗澡哼哼，太可爱了
-
-  
-
-你也觉得可爱的话请去推特夸夸 @justjustjustcc
-求个一键三连]]></summary>
         <author>
             <name>Hi, DIYgod</name>
         </author>
