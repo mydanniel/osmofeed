@@ -10,18 +10,7 @@
       "title": "Hi, DIYgod",
       "feedUrl": "https://diygod.me/atom.xml",
       "siteUrl": "https://diygod.cc",
-      "articles": [
-        {
-          "id": "10-2022",
-          "author": null,
-          "description": "🕊️ 本文送给更开放的互联网\n\n起因是看到 @geekbb 介绍 Warp 的推文。尽管 Warp 已经发布了很长时间，就保护 IP 隐私而言，它并没有 iCloud Private Relay 好用，我也没有魔法上网的需求。但是我突然意识到，我还是有隐藏 IP 的需求。\n在开发 RSSHub 的几年中，我发现提供公共 API 的站点非常少，许多站点还会采取严格的反爬控制来限制其平台内容的获取。有些站点会屏蔽同一 IP 发出过多请求，而还有一些站点则会全面屏蔽常见云服务器厂商的 IP 地址。因此，仅仅为了获取最新几条内容更新却变得非常困难。\n\n这种情况需要使用代理，但是专门的爬虫代理通常价格昂贵，性价比极低，如果 Cloudflare WARP 的无限流量和丰富的 IP 资源能被 RSSHub 利用就太棒了。RSSHub 已经支持了通用的代理协议，只要能将 WARP 包装为通用的 proxy 就可以。\n\n虽然无法直接在命令行环境中方便地使用官方客户端，但这么容易想到的点子肯定已经被别人实现过了。我在 GitHub 上找到了一个封装的 Docker。\n\n然后只需要在 RSSHub 的 docker-compose.yml 中再添加这样一个 service 来启用代理服务\nCopywarp-socks:\n    image: monius/docker-warp-socks:latest\n    privileged: true\n    volumes:\n        - /lib/modules:/lib/modules\n    cap_add:\n        - NET_ADMIN\n        - SYS_ADMIN\n    sysctls:\n        net.ipv6.conf.all.disable_ipv6: 0\n        net.ipv4.conf.all.src_valid_mark: 1\n    healthcheck:\n        test: [\"CMD\", \"curl\", \"-f\", \"https://www.cloudflare.com/cdn-cgi/trace\"]\n        interval: 30s\n        timeout: 10s\n        retries: 5\n\n最后给 RSSHub 加一个 PROXY_URI 环境变量来使用代理\nCopyPROXY_URI: 'socks5h://warp-socks:9091'\n\n我选取了一个我经常使用的 hotukdeals 路由（英国版的什么值得买）进行测试。该站点会屏蔽所有 DigitalOcean 的 IP，因此一直处于 403 状态。\n\n加上 WARP 后可顺利访问\n\n此外，我发现每次重启 WARP 时，都会输出新的 IP。尽管我没有时间验证，但我感觉 IP 应该会经常自动更改，这对解决反爬是一个好消息。\n\n还可以进一步自定义 WireGuard 的配置，包括使用付费版 WARP+ 和自定义 endpoint，以获取可能更好的结果。\n生成 WireGuard 配置文件可以使用\n\n刷 WARP+ 流量和筛选 endpoint 可以使用\n\n有说法是 WARP+ 的速度并无明显差异（《WARP、WARP + 速度对比，以及 WARP 速度上限》），但是是否影响反爬效果还需要进一步验证。\n如果一切顺利，RSSHub 官方实例中许多严格反爬的路由应该能重新使用。我将在几天内进行验证并在此更新。",
-          "link": "https://xlog.app/api/redirection?characterId=10&noteId=2022",
-          "publishedOn": "2023-08-17T22:01:51.000Z",
-          "wordCount": 10304,
-          "title": "优雅使用 Cloudflare WARP 应对  RSSHub 反爬难题",
-          "imageUrl": "https://ipfs.xlog.app/ipfs/bafkreigrpjhr6oshromzjunxhj6jaqivggdcstkfhutqgfbhh7fztgtioq"
-        }
-      ]
+      "articles": []
     }
   ],
   "cliVersion": "1.15.1"
