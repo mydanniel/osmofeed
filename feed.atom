@@ -2,18 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mydanniel.github.io/osmofeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2023-10-25T01:13:20.554Z</updated>
+    <updated>2023-10-26T01:12:03.619Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://mydanniel.github.io/osmofeed/index.html"/>
     <link rel="self" href="https://mydanniel.github.io/osmofeed/feed.atom"/>
-    <entry>
-        <title type="html"><![CDATA[英国旅游VLOG | 爱丁堡圣诞节]]></title>
-        <id>10-2186</id>
-        <link href="https://xlog.app/api/redirection?characterId=10&amp;noteId=2186"/>
-        <updated>2023-09-26T06:18:43.000Z</updated>
-        <summary type="html"><![CDATA[2021年12月拍摄, 视频播放量 377、弹幕量 1、点赞数 56、投硬币枚数 35、收藏人数 12、转发人数 1, 视频作者 DIYgod, 作者简介 博客 - diygod.cc，相关视频：(搬运)数字积木官方版圣诞节合集，英国旅游VLOG | 英格兰湖区，英国旅游VLOG | 发小带你逛哈利波特制片厂，上海迪士尼「点亮奇梦：夜光幻影秀」烟花秀 4K，【4K】英国乡村系列！迷人的英国乡村-威瑟姆的英格兰清晨漫步，爱丁堡留学Vlog#02/宜家采购/Lidl/Main Library真的好美啊/准备开学噜，OhSerena 伦敦vlog3｜自然历史博物馆｜V&A博物馆｜罗马风格餐厅，【爱丁堡有轨电车】随拍，火车上洗澡？免费早餐！英国知名卧铺车Caledonian Sleeper 体验，旅行VLOG｜在爱丁堡等到一场人生日落]]></summary>
-        <author>
-            <name>Hi, DIYgod</name>
-        </author>
-    </entry>
 </feed>
