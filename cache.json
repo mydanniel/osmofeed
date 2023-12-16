@@ -10,7 +10,18 @@
       "title": "Hi, DIYgod",
       "feedUrl": "https://diygod.me/atom.xml",
       "siteUrl": "https://diygod.cc",
-      "articles": []
+      "articles": [
+        {
+          "id": "10-2292",
+          "author": null,
+          "description": "Information freedom does not naturally evolve, it degrades.\n—— Open Information Manifesto\n\nTwitter 在 8 月决定了全面限制公开访问和 API 接口，导致第三方集成均无法再正常工作。开放用户数据被绑架成私人敛财工具，曾经的 Open Web 标杆 Twitter 竟沦落到这种境地，数字奴隶制在最不应该的地方出现，令人唏嘘。这也致使许多用户流向 Fediverse，但社交关系和习惯一旦形成，要让其迅速改变并不易，更多人还是选择了忍受，Musk 也是看穿了这一点才有恃无恐\n\n  \n  \n  \n\n然而，我们也不能武断地说 Twitter 封闭，毕竟它仍然开放了一个起步价为每月 4 万美元，上限不设的企业 API\n\n什么？你说用不起？\n那么你可以像我一样，通过创建一万个账号以绕开封锁\n尽管 Twitter 限制了所有公开访问，但我们发现新下载的 Twitter 移动客户端仍可以正常查看用户动态。这为我们提供了潜在的利用方法，通过抓包，我们可以看到客户端是通过请求一系列特殊接口来创建一个权限较低、频率限制严格的临时账号。我们可以用这个账号获取我们需要的大部分数据。然而，这种账号对请求频率的限制非常严格，因此需要大量的这样的账号才能满足基本的使用需求。同时，每个 IP 在一段时间内只能获取一个临时账号，因此我们也需要大量的 IP 代理\n具体拆包和抓包过程可以参考 BANKA 的《怎么爬 Twitter（Android）》。站在 BANKA 肩膀上，我们可以写出一个这样的注册脚本（来自 Nitter - Guest Account Branch Deployment）：\nCopy#!/bin/bash\n\nguest_token=$(curl -s -XPOST https://api.twi…",
+          "link": "https://xlog.app/api/redirection?characterId=10&noteId=2292",
+          "publishedOn": "2023-12-15T10:14:46.000Z",
+          "wordCount": 13082,
+          "title": "轻松创建一万个 Twitter 账号",
+          "imageUrl": "https://ipfs.crossbell.io/ipfs/Qmbs7PNBLHJ8EK3fkEHsPtP89AbpnS6iMw8Eg2aW7Jc1DT"
+        }
+      ]
     }
   ],
   "cliVersion": "1.15.1"
