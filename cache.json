@@ -20,16 +20,6 @@
           "wordCount": 10091,
           "title": "Twitter 对开源项目发起 DDoS 攻击",
           "imageUrl": "https://ipfs.crossbell.io/ipfs/QmWvACcSj5wEFP4vkvknBZ3d9VgiBwEJd62JqSPWMyMjY3"
-        },
-        {
-          "id": "10-2434",
-          "author": null,
-          "description": "Markdown 是一种广泛使用的轻量级标记语言，允许人们使用易读易写的纯文本格式编写文档，也是 xLog 主要使用的文章格式，本文就以 xLog Flavored Markdown 为例来说明如何优雅地解析一个 Markdown 文档\n架构#\n解析过程可以用这样一个架构来表示：\nflowchart TB\n  subgraph input\n    Markdown\n  end\n  subgraph unified\n    subgraph remark\n      Markdown:::inputClass --string--> remark-parse:::remarkClass --mdast--> remarkPlugins[remark plugins]:::remarkClass\n      remarkPlugins --mdast--> remark-rehype:::remarkClass & mdast-util-toc:::remarkClass\n    end\n    subgraph rehype\n      remark-rehype --hast--> rehypePlugins[rehype plugins]:::rehypeClass\n      rehypePlugins --hast--> hast-util-to-text:::rehypeClass & hast-util-to-html:::rehypeClass & hast-util-to-jsx-runtime:::rehypeClass & unist-util-visit:::rehypeClass\n    end\n  end\n  subgraph output\n    mdast-util-toc --tocResult--> TOC:::inputClass\n    …",
-          "link": "https://xlog.app/api/redirection?characterId=10&noteId=2434",
-          "publishedOn": "2024-01-18T12:50:37.000Z",
-          "wordCount": 13235,
-          "title": "如何优雅编译一个 Markdown 文档",
-          "imageUrl": "https://ipfs.crossbell.io/ipfs/QmYJmmuE1zCbdEXUpWL7T9ECqv6pqrtJrukqMcZarvgcQj"
         }
       ]
     }

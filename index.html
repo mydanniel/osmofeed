@@ -94,77 +94,10 @@ nitter-status 开发者更是直接放出了告别页面
             </li>
         </ul>
       </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2024-01-18 datetime="2024-01-18T12:50:37.000Z">2024-01-18</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2024-01-18 datetime="2024-01-18T12:50:37.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Hi, DIYgod</button>
-                  <a class="source-heading__link" href="https://diygod.cc">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="10-2434"
-                        open
-                      >
-                        <summary class="article-expander__title">如何优雅编译一个 Markdown 文档</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://xlog.app/api/redirection?characterId&#x3D;10&amp;noteId&#x3D;2434">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://ipfs.crossbell.io/ipfs/QmYJmmuE1zCbdEXUpWL7T9ECqv6pqrtJrukqMcZarvgcQj" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Markdown 是一种广泛使用的轻量级标记语言，允许人们使用易读易写的纯文本格式编写文档，也是 xLog 主要使用的文章格式，本文就以 xLog Flavored Markdown 为例来说明如何优雅地解析一个 Markdown 文档
-架构#
-解析过程可以用这样一个架构来表示：
-flowchart TB
-  subgraph input
-    Markdown
-  end
-  subgraph unified
-    subgraph remark
-      Markdown:::inputClass --string--&gt; remark-parse:::remarkClass --mdast--&gt; remarkPlugins[remark plugins]:::remarkClass
-      remarkPlugins --mdast--&gt; remark-rehype:::remarkClass &amp; mdast-util-toc:::remarkClass
-    end
-    subgraph rehype
-      remark-rehype --hast--&gt; rehypePlugins[rehype plugins]:::rehypeClass
-      rehypePlugins --hast--&gt; hast-util-to-text:::rehypeClass &amp; hast-util-to-html:::rehypeClass &amp; hast-util-to-jsx-runtime:::rehypeClass &amp; unist-util-visit:::rehypeClass
-    end
-  end
-  subgraph output
-    mdast-util-toc --tocResult--&gt; TOC:::inputClass
-    …</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;44
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/mydanniel/osmofeed/actions/runs/7924565378">
-        <time id="build-timestamp" datetime="2024-02-16T01:12:35.621Z">2024-02-16T01:12:35.621Z</time>
+      <a class="footer-link" href="https://github.com/mydanniel/osmofeed/actions/runs/7938218238">
+        <time id="build-timestamp" datetime="2024-02-17T01:12:01.845Z">2024-02-17T01:12:01.845Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

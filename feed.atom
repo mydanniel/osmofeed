@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mydanniel.github.io/osmofeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2024-02-16T01:12:35.637Z</updated>
+    <updated>2024-02-17T01:12:01.860Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://mydanniel.github.io/osmofeed/index.html"/>
     <link rel="self" href="https://mydanniel.github.io/osmofeed/feed.atom"/>
@@ -43,35 +43,6 @@ Twitter Monitor 开发者 MANKA 表示不愿意再浪费时间
 nitter-status 开发者更是直接放出了告别页面
 
 看起来就到此为止了吗？不，这远非终点。自由无法被阻挡，我们还有很多事情可以做]]></summary>
-        <author>
-            <name>Hi, DIYgod</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何优雅编译一个 Markdown 文档]]></title>
-        <id>10-2434</id>
-        <link href="https://xlog.app/api/redirection?characterId=10&amp;noteId=2434"/>
-        <updated>2024-01-18T12:50:37.000Z</updated>
-        <summary type="html"><![CDATA[Markdown 是一种广泛使用的轻量级标记语言，允许人们使用易读易写的纯文本格式编写文档，也是 xLog 主要使用的文章格式，本文就以 xLog Flavored Markdown 为例来说明如何优雅地解析一个 Markdown 文档
-架构#
-解析过程可以用这样一个架构来表示：
-flowchart TB
-  subgraph input
-    Markdown
-  end
-  subgraph unified
-    subgraph remark
-      Markdown:::inputClass --string--> remark-parse:::remarkClass --mdast--> remarkPlugins[remark plugins]:::remarkClass
-      remarkPlugins --mdast--> remark-rehype:::remarkClass & mdast-util-toc:::remarkClass
-    end
-    subgraph rehype
-      remark-rehype --hast--> rehypePlugins[rehype plugins]:::rehypeClass
-      rehypePlugins --hast--> hast-util-to-text:::rehypeClass & hast-util-to-html:::rehypeClass & hast-util-to-jsx-runtime:::rehypeClass & unist-util-visit:::rehypeClass
-    end
-  end
-  subgraph output
-    mdast-util-toc --tocResult--> TOC:::inputClass
-    …]]></summary>
         <author>
             <name>Hi, DIYgod</name>
         </author>
