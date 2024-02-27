@@ -20,16 +20,6 @@
           "wordCount": 10909,
           "title": "和帕鲁生活在一起的两周",
           "imageUrl": "https://ipfs.crossbell.io/ipfs/QmVe7gAntvcisk3xVbXcwwBiMYcVrTi2m4QqD1ZySM6x9y"
-        },
-        {
-          "id": "10-2456",
-          "author": null,
-          "description": "背景#\nTwitter 被马斯克收购后，从去年 8 月开始，他们对开源第三方集成和第三方客户端进行了一系列明里暗里的打压和攻击，这样做是为了阻止用户通过非官方客户端访问和使用 Twitter，来增加公司的广告和会员营收\n而开源社区中以 Nitter 和 RSSHub 为代表的开源项目并没有放弃向信息自由的努力，通过众多聪明的开源开发者们想出来的一个个奇妙操作（issue），在一轮轮封锁和反封锁的对抗中短暂占了上风，其中最流行的做法是通过 Android 客户端使用的接口功能生成临时账号（细节）\n经过#\n在两天前（1 月 26 日），许多 Nitter 实例的运行者和开发者报告称，他们正在使用的接口已被封锁。与此同时，他们的实例也开始遭受报复性 DDoS 攻击\n\n\n起初，我并没有太在意这件事情。毕竟，谁会相信 Twitter 官方会做出如此令人不耻且自降身段的 DDoS 行为呢？我对此深感怀疑\n然而，昨天当我打开 RSSHub 的 GitHub 仓库时，却意外地发现了以下内容\n\n最近一个月的请求数达到了 4.5 亿，比正常水平高出 50%（正常水平仅为 3 亿多）\n然后登录 Cloudflare 查看日志\n\n自从 26 日 0 点（当天官方接口被封锁和 Nitter 遭受 DDoS 攻击）以来，RSSHub 也一直遭受大规模的 DDoS 攻击。最近两天，请求量是平时的 170 多倍，每秒约 1 千次请求\n尽管数量看起来可怕，但 Cloudflare 出色的缓存功能已经成功缓存了超过 99% 的 DDoS 请求，甚至没有触发报警\n\nRSSHub 的负载均衡和自动扩容功能非常完善，没有受到太大的压力\n\n🤣 就这样一直没有发现\n进一步分析发现，所有请求都来自 IP 地址为 139.255.221.98 的设备。这些请求都是针对 /twitter/keyword 路由，并且后面跟着一串不同且无意义的参数\n\n我很清楚为什么只针对 keyword 路由，尽管代码中没有明确表达，但根据我的使用经验，此路由使用的搜索接口受到最严格的访问频率限制，通过攻击该路由可以实现最大化效果。由此可以推断出 DDoS 攻击者也对 Twitter 的接口非常熟悉\n虽然无法直接证明是官方人员所为，但各种无法解释的 “巧合” 已经清楚地表明了事情的真相，马斯克的简单粗暴行事风格也正在深刻影响这家公司\n影响#\n进一步封锁 API 和进行 DDoS 攻击这两个操作可以说非常有效\nNitter 开发者 zedeus 表示 Nitter 已死\n\nTwitter Monitor 开发者 MANKA 表示不愿意再浪费时间\n\nnitter-status 开发者更是直接放出了告别页面\n\n看起来就到此为止了吗？不，这远非终点。自由无法被阻挡，我们还有很多事情可以做",
-          "link": "https://xlog.app/api/redirection?characterId=10&noteId=2456",
-          "publishedOn": "2024-01-28T10:24:53.000Z",
-          "wordCount": 10091,
-          "title": "Twitter 对开源项目发起 DDoS 攻击",
-          "imageUrl": "https://ipfs.crossbell.io/ipfs/QmWvACcSj5wEFP4vkvknBZ3d9VgiBwEJd62JqSPWMyMjY3"
         }
       ]
     }
