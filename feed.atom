@@ -2,10 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mydanniel.github.io/osmofeed/index.html</id>
     <title>osmos::feed</title>
-    <updated>2024-03-10T01:16:54.312Z</updated>
+    <updated>2024-03-11T01:13:19.948Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="https://mydanniel.github.io/osmofeed/index.html"/>
     <link rel="self" href="https://mydanniel.github.io/osmofeed/feed.atom"/>
+    <entry>
+        <title type="html"><![CDATA[一个六岁开源项目的崩溃与新生]]></title>
+        <id>10-2532</id>
+        <link href="https://xlog.app/api/redirection?characterId=10&amp;noteId=2532"/>
+        <updated>2024-03-10T19:29:05.000Z</updated>
+        <summary type="html"><![CDATA[我有一个维护了六年的开源项目 —— RSSHub，它正在面临崩溃
+背景#
+表面上，它有接近 30k Stars、900 多 Contributors、每月 3 亿多次请求和数不清的用户、每月几十刀的赞助、有源源不断的 issue 和 pr、代码几乎每天更新，非常健康和充满活力，但在不可见的地方，持续数年高昂的维护时间成本、每月一千多刀的服务器费用、每天重复繁琐且逐渐积累的维护工作，都让它在崩溃的边缘反复横跳
+项目是六年前开发的，不少当时以 Next Generation 为口号的时髦 Node.js 技术栈和依赖库已经成为时代眼泪，现在看非常陈旧，很多现在流行的新技术没法应用，比如 JSX、TypeScript、Serverless 等；它的架构也非常不合理，每个路由的信息散落在多个地方，开发或者变更一个路由需要多处修改，一个地方去注册路由，一个地方去编写路由脚本，一个地方去编写 Radar 规则，一个地方去编写文档...... 这增加了很多工作量，也很容易出错，之前路由少的时候并不是个问题，但现在已经变得难以忍受
+在如此糟糕的基础架构下能保持现状已经是竭尽全力，开发新功能更是无本之木，只会增加以后更新的难度，所以我有时候脑子蹦出的新奇想法也很难实现
+要解决这些问题，唯一的办法是使用现代化的框架和新设计的架构来重写内核，但随着路由越来越多，改造成本也越来越高，每个基础改动可能都需要多达数月的工作量，所以虽然问题越来越严重，但秉承着又不是不能用的原则一拖再拖
+但这又是不得不做的事情，所以我抽空花了几个月的时间重新设计和重写了它
+技术栈更新#
+koa -> Hono#
+第一步也是最基础和难度最大的是换掉之前使用的 Web 框架 koa，作为六年前流行的下一代 Web 框架，作者早就弃坑了，调研之后决定换用对  JSX、TypeScript、Serverless 支持最好的 Ho…]]></summary>
+        <author>
+            <name>Hi, DIYgod</name>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[和帕鲁生活在一起的两周]]></title>
         <id>10-2510</id>
